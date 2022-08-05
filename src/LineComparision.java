@@ -5,7 +5,14 @@ public class LineComparision {
     }
     public static void main(String[] args) {
         LineComparision calculation = new LineComparision();
-        double length = calculation.coOrdinates(1, 5, 3, 4);
-        System.out.println("Distance between two point is : " + length);
+        Double lengthOne = calculation.coOrdinates(1, 5, 3, 4);
+        Double lengthTwo = calculation.coOrdinates(1, 5, 3, 4);
+        if (lengthOne.equals(lengthTwo)) {
+            System.out.println("LengthOne and LengthTwo are equal");
+        }
+        else {
+            System.out.println("LengthOne and LengthTwo are not equal");
+
+        }
     }
 }
