@@ -1,23 +1,15 @@
 public class LineComparision {
-    double coOrdinates (int x1, int x2, int y1, int y2) {
-        double lengthFormula = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
-        return lengthFormula;
-    }
-    public static void main(String[] args) {
-        LineComparision calculation = new LineComparision();
-        Double lengthOne = calculation.coOrdinates(1, 5, 3, 4);
-        System.out.println("LengthOne value is " + lengthOne);
-        Double lengthTwo = calculation.coOrdinates(1, 7, 2, 4);
-        System.out.println("LengthTwo value is " + lengthTwo);
+    void compareToMethod(Double lengthOne, Double lengthTwo) {
+
         int compareValue = lengthOne.compareTo(lengthTwo);
         if (compareValue < 0) {
-            System.out.println("LengthTwo is greater than LengthOne");
+            System.out.println("Length of Line 2 is greater than Length of Line 1.");
         }
         else if (compareValue > 0) {
-            System.out.println("LengthOne is greater than LengthTwo");
+            System.out.println("Length of Line 1 is greater than Length of Line 2.");
         }
         else {
-            System.out.println("LengthOne and LengthTwo are equal");
+            System.out.println("Length of Line 1 and Length of Line 2 both are equal");
         }
     }
 }
